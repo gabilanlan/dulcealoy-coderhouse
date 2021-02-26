@@ -17,6 +17,52 @@
    <body>
    
       <div>
+
+        <header>
+<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark nav-bar-dulce">
+<div class="container">
+  <a  href="./index.html"><img src="./images/logo/Dulce-aloy-LOGO.png" class="tm-site-logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main_nav">  
+    <ul class="navbar-nav ml-auto">
+ <li class="nav-item ">
+                     <a class="nav-link" href="./pages/nosotros.html">Nosotros <span class="sr-only">(current)</span></a>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Productos
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./pages/singluten.html">Sin Gluten</a>
+                        <a class="dropdown-item" href="./pages/sinazucar.html">Sin Azúcar</a>
+                     </div>
+                  </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="./pages/misesion.html">Mi Sesión</a>
+                  </li>
+    </ul>
+  </div> <!-- navbar-collapse.// -->
+</div> <!-- container.// -->
+</nav>
+</header>
+<script type="text/javascript">
+  if ($(window).width() > 992) {
+  $(window).scroll(function(){  
+     if ($(this).scrollTop() > 40) {
+        $('#navbar_top').addClass("fixed-top");
+        // add padding top to show content behind navbar
+        $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+      }else{
+        $('#navbar_top').removeClass("fixed-top");
+         // remove padding top from body
+        $('body').css('padding-top', '0');
+      }   
+  });
+} // end if
+</script><!-- 
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <img src="./images/logo/Dulce-aloy-LOGO.png" class="tm-site-logo">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +93,7 @@
                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                </form>
             </div>
-         </nav>
+         </nav> -->
       </div>
       <section class="carrusel-principal">
          <div id="fotoPrincipal-carrusel" class="carousel slide" data-ride="carousel">

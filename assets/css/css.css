@@ -8,11 +8,13 @@ h1 {
   min-height: 460px;
   background-color: #556E5B; }
 
+
+
 .tm-site-logo {
   display: inline-block;
   margin-right: 5px;
-  width: 100 px;
-  height: 100px; }
+  width: 60px;
+  height: 80px; }
 
 .tituloPrincipal {
   font-size: 60px; }
@@ -165,3 +167,8 @@ ul ol {
   opacity: 0.3;
   font-size: 13px;
   margin-bottom: 0; }
+
+
+.nav-bar-dulce{
+  background-color: #75106f;
+}
