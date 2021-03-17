@@ -1,9 +1,14 @@
 $colorBase: #ffe0e9;
 
+@import url('https://fonts.googleapis.com/css2?family=Lora');
+
+$font-main: 'Lora';
+
 h1 {
-	font-size: 40px;
+
 	color: #290F4C;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: $font-main;
+    font-size: 48px;
 }
 
 .placeholder {
@@ -12,20 +17,188 @@ h1 {
   background-color: #556E5B;
 }
 
-nav-bar-dulce{
-	background-color: #75106f;
+.nav-link{
+	padding-left: 30px;
+    padding-right: 30px;
 }
 
-.tm-site-logo {
-  display: inline-block;
-  margin-right: 5px;
-  width: 100 px;
-  height: 80px;
+
+
+.btn-comprar{
+	display: inline-block;
+    padding: 9px 60px 7px;
+    line-height: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #A4036F;
+    border: 2px solid #A4036F;
+    background-color: transparent;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
+
+.destacar-foto{
+	position: absolute;
+    display: block;
+    visibility: visible;
+    left: 228px;
+    top: 200px;
+    z-index: 6;
+}
+
+.destacado-badge{
+	width: 120px;
+    height: 120px;
+}
+
+.section-btn-comprar{
+	margin-top: 100px;
+}
+
+.productos-hp{
+	height: 600px;
+	background-image: url("../../images/fondo-p.jpg");
+}
+
+
+.img-separador{
+	max-width:100%;
+	height:auto;
+}
+.img-resumen-qs{
+	max-width:100%;
+	height:auto;
+	
+}
+
+.formulario{
+	margin-bottom: 30px;
+}
+
+.h3-producto{
+	display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: left;
+    margin-top: 10%;
+    font-size: 3em;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.h2-catalogo{
+	display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 3em;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+
+.img-producto-hp{
+	max-width:100%;
+	height:auto;
+}
+
+.titulo-productos-hp{
+	margin-bottom: 50px;
+	padding-top: 20px;
+}
+
+.tipo-producto-hp{
+	margin-top: 5px;
+}
+.precio-productos-hp{
+	margin-top: 14px;
+}
+.h1-titulo-productos-hp{
+	font-size:1vw;
+	display: block;
+	text-align: center;
+}
+
+.h1-subtitulo-productos-hp{
+	font-size:1vw;
+	display: block;
+	text-align: center;
+}
+
+.titulo-producto-hp{
+	margin-top: 30px;
+	display: block;
+} 
+
+.tipo-producto-hp{
+	display: block;
+
+}
+
+
+.section-btn-ver-todos{
+	justify-content: center;
+    align-content: center;
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+
+.btn-ver-todos{
+	display: inline-block;
+    padding: 9px 60px 7px;
+    line-height: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 1px solid #b95598;
+    background-color: #A4036F;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+.caja-producto-hm{
+	margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+
+.tm-site-logo {
+	max-width:100%;
+	height:auto;
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+	height: 80px;
+}
+
 
 
 .tituloPrincipal {
 	font-size: 60px;
+}
+
+.titulo-productos{
+	justify-content: center;
+    margin-left: 220px;
+    margin-top: 150px;
+    margin-bottom: 100px
 }
 
 .carousel-inner img {
@@ -40,16 +213,8 @@ nav-bar-dulce{
 	justify-content: center;
 }*/
 
-
-.carrusel-principal{
-	overflow: hidden;
-	display: inline-block;
-
-}
-
 .lista-productos{
 	padding-left: 40px;
-    padding-top: 30px;
 }
 
 .lista-productos-sinazucar{
@@ -85,46 +250,14 @@ nav-bar-dulce{
 	margin-right: 40px;
 	margin-bottom: 10px;
 	overflow: hidden;
-	padding-top: 10px;
 	padding-bottom: 5px;
 	display: inline-block;
-
-
 }
 
-#menu {
-	padding: 0;
-
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffffbf;
 }
 
-#menu li {
-	display: inline-block;
-
-}
-
-#menu li a {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	width: 100px;
-	height: 50px;
-	float: right;
-	padding: 10px;
-	background-color: #532D7E;
-	color: #fff;
-}
-
-#menu li a:hover{
-	width: 200px;
-	height: 60px;
-	background-color: #290F4C;
-	color: #fff;
-}
-
-
-h2 {
-	font-size: 30px;
-	color : grey;
-}
 
 p {
 	text-align: left;
@@ -142,6 +275,12 @@ p {
 .nosotros__descripcion {
 	font-size: 18px;
 
+}
+
+
+.tabla-productos-hp{
+	justify-content: center;
+    align-content: center;
 }
 
 .nosotros__foto {
@@ -164,11 +303,32 @@ ul ol {
 	color : #544b53;
 }
 
+.resumen-quienes-somos{
+
+
+	background: radial-gradient(400px 300px ellipse at 350px 310px, #efea5a, #fff);
+    height: 626px;
+    padding-top: 40px;
+}
+
+.texto-resumen-qs{
+	font-size:1vw;
+	max-width: 600px;
+    text-align: -webkit-right;
+    margin-top: 120px;
+}
+
+.firma-qs{
+	max-width: 40%;
+    margin-top: 30px;
+}
+
 
 .footer {
   padding:50px 0;
+
   color:#f0f9ff;
-  background-image: linear-gradient(to left, #532D7E, #A377CF)
+  background-color: #88498F;
 }
 
 .footer h3 {
@@ -185,6 +345,7 @@ ul ol {
   font-size:14px;
   margin-bottom:0;
 }
+
 
 .footer ul a {
   color:inherit;
@@ -220,3 +381,62 @@ ul ol {
   font-size:13px;
   margin-bottom:0;
 }
+
+.nav-bar-dulce{
+	padding: 30px 0 ;
+
+}
+
+.paginador{
+	display: block;
+	justify-content: center;
+    align-content: center;
+}
+
+
+.header-productos{
+	display: block;
+    height: auto;
+    overflow: hidden;
+    background: url(../../images/bg_productos.jpeg) no-repeat center center fixed;
+    padding: 110px 0 30px 0;
+    color: #fff;
+    position: relative;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+.header-nosotros{
+	display: block;
+    height: auto;
+    overflow: hidden;
+	padding: 110px 0 30px 0;
+    color: #fff;
+    position: relative;
+    height: 400px;
+    margin-bottom: 40px;
+    background: url(../../images/bg_nosotros.jpg) no-repeat center center fixed;
+}
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}

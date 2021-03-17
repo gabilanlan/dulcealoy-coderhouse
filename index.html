@@ -11,91 +11,39 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />   
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+      <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
    </head>
    <body>
-   
-      <div>
-
-        <header>
-<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark nav-bar-dulce">
-<div class="container">
-  <a  href="./index.html"><img src="./images/logo/Dulce-aloy-LOGO.png" class="tm-site-logo"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="main_nav">  
-    <ul class="navbar-nav ml-auto">
- <li class="nav-item ">
-                     <a class="nav-link" href="./pages/nosotros.html">Nosotros <span class="sr-only">(current)</span></a>
-                  </li>
-                 
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Productos
-                     </a>
-                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./pages/singluten.html">Sin Gluten</a>
-                        <a class="dropdown-item" href="./pages/sinazucar.html">Sin Azúcar</a>
-                     </div>
-                  </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="./pages/misesion.html">Mi Sesión</a>
-                  </li>
-    </ul>
-  </div> <!-- navbar-collapse.// -->
-</div> <!-- container.// -->
-</nav>
-</header>
-<script type="text/javascript">
-  if ($(window).width() > 992) {
-  $(window).scroll(function(){  
-     if ($(this).scrollTop() > 40) {
-        $('#navbar_top').addClass("fixed-top");
-        // add padding top to show content behind navbar
-        $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
-      }else{
-        $('#navbar_top').removeClass("fixed-top");
-         // remove padding top from body
-        $('body').css('padding-top', '0');
-      }   
-  });
-} // end if
-</script><!-- 
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <img src="./images/logo/Dulce-aloy-LOGO.png" class="tm-site-logo">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
-                  <li class="nav-item ">
-                     <a class="nav-link" href="./pages/nosotros.html">Nosotros <span class="sr-only">(current)</span></a>
-                  </li>
-                 
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Productos
-                     </a>
-                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./pages/singluten.html">Sin Gluten</a>
-                        <a class="dropdown-item" href="./pages/sinazucar.html">Sin Azúcar</a>
-                     </div>
-                  </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="./pages/misesion.html">Mi Sesión</a>
-                  </li>
-                
-               </ul>
-               <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Busca tu producto" aria-label="Buscar">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-               </form>
+      <header>
+         <nav class="nav-bar-dulce">
+            <div class="container">
+               <div >
+                  <ul class="nav justify-content-center">
+                     <li class="nav-item ">
+                        <a class="nav-link" href="./pages/nosotros.html">Nosotros <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./pages/productos.html#singluten">Sin Gluten</a>
+                     </li>
+                     <a  href="./index.html"><img src="./images/Recurso 4.png" class="tm-site-logo"></a>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./pages/productos.html#sinazucar">Sin Azúcar</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="./pages/misesion.html">Mi Sesión</a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- navbar-collapse.// -->
             </div>
-         </nav> -->
-      </div>
-      <section class="carrusel-principal">
+            <!-- container.// -->
+         </nav>
+      </header>
+      <section class="carrusel-principal row justify-content-center">
          <div id="fotoPrincipal-carrusel" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
                <li data-target="#fotoPrincipal-carrusel" data-slide-to="0" class="active"></li>
@@ -103,40 +51,149 @@
             </ul>
             <div class="carousel-inner-index">
                <div class="carousel-item active">
-                  <img src="./images/Archivo 1.jpg" alt="1" width="1000" height="700">
+                  <img src="./images/1.png" alt="1" >
                </div>
                <div class="carousel-item">
-                  <img src="./images/Archivo 3.jpg" alt="2" width="1000" height="700">
+                  <img src="./images/2.png" alt="2" >
+               </div>
+            </div>
+         </div>
+         <div class="section-btn-comprar">
+            <a class="btn-comprar" tabindex="0" href="./pages/producto.html" >Compra ahora</a>
+         </div>
+      </section>
+      <section class="container titulo-productos">
+         <img src="./images/bajo-portada.jpg" class="img-separador" >
+      </section>
+      <section class="resumen-quienes-somos">
+         <div class="container seccion-img-resumen-qs">
+            <div class = "row ">
+               <div class="col-sm">
+                  <img src="./images/familia-home.png" class="img-resumen-qs" >
+               </div>
+               <div class=" col-sm texto-resumen-qs">
+                  Somos una empresa de gran tradición familiar que por mucho tiempo se ha preocupado por ofrecer los más ricos y variados pasteles, tortas y bollería en general a una clientela que nos ha dado su preferencia.
+                  Con 6 locales en pleno funcionamiento en Santiago, nos hemos planteado como objetivo que cada visita sea toda una dulce y memorable experiencia, donde nuestro estilo de atención, grato y amable de parte de nuestro equipo se conjuguen con nuestras deliciosas preparaciones y todo dentro de un ambiente cálido y acogedor.
+                  <div class="col align-self-end">
+                     <img src="./images/firma.png"  class="firma-qs">
+                  </div>
                </div>
             </div>
          </div>
       </section>
+      <section class="productos-hp">
+         <div class="container ">
+            <div class="titulo-productos-hp">
+              <p class="h1-titulo-productos-hp"> TOP Productos </p>
+              <p class="h1-subtitulo-productos-hp"> Pruebalos antes que se acaben </p>
+            </div>
+            <div class="row tabla-productos-hp">
+               <div class="col-xs-4 caja-producto-hm">
+                  <div class ="row">
+                     <div class ="col-xs-6">
+                        <img width="240" height="180" src="./images/12-1.png"  class="img-producto-hp"  >
+                     </div>
+                     <div class="col-xs-6">
+                        <a class="titulo-producto-hp">Producto 1</a>
+                        <a class="tipo-producto-hp">Sin Gluten</a>
+                        <p class="precio-productos-hp">$4.000</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xs-4 caja-producto-hm">
+                  <div class ="row">
+                     <div class ="col-xs-6">
+                        <img width="240" height="180" src="./images/12-1.png"  class="img-producto-hp"  >
+                     </div>
+                     <div class="col-xs-6">
+                        <a class="titulo-producto-hp">Producto 1</a>
+                        <a class="tipo-producto-hp">Sin Gluten</a>
+                        <p class="precio-productos-hp">$4.000</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xs-4 caja-producto-hm">
+                  <div class ="row">
+                     <div class ="col-xs-6">
+                        <img width="240" height="180" src="./images/11-1.png"  class="img-producto-hp"  >
+                     </div>
+                     <div class="col-xs-6">
+                        <a class="titulo-producto-hp">Producto 1</a>
+                        <a class="tipo-producto-hp">Sin Gluten</a>
+                        <p class="precio-productos-hp">$4.000</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xs-4 caja-producto-hm">
+                  <div class ="row">
+                     <div class ="col-xs-6">
+                        <img width="240" height="180" src="./images/10-1.png"  class="img-producto-hp"  >
+                     </div>
+                     <div class="col-xs-6">
+                        <a class="titulo-producto-hp">Producto 1</a>
+                        <a class="tipo-producto-hp">Sin Gluten</a>
+                        <p class="precio-productos-hp">$4.000</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xs-4 caja-producto-hm">
+                  <div class ="row">
+                     <div class ="col-xs-6 " >
+                        <img width="240" height="180" src="./images/9-1.png"  class="img-producto-hp"  >
+                     </div>
+                     <div class="col-xs-6">
+                        <a class="titulo-producto-hp">Producto 1</a>
+                        <a class="tipo-producto-hp">Sin Gluten</a>
+                        <p class="precio-productos-hp">$4.000</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xs-4 caja-producto-hm">
+                  <div class ="row">
+                     <div class ="col-xs-6" >
+                        <img width="240" height="180" src="./images/8-1.png"  class="img-producto-hp"  >
+                     </div>
+                     <div class="col-xs-6">
+                        <a class="titulo-producto-hp">Producto 1</a>
+                        <a class="tipo-producto-hp">Sin Gluten</a>
+                        <p class="precio-productos-hp">$4.000</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+             <div class="section-btn-ver-todos">
+            <a class="btn-ver-todos" tabindex="0" href="./pages/productos.html" >Ver Todos</a>
+         </div>
+         </div>
+
+      </section>
+
       <div class="footer">
          <footer>
-               <div class="container">
-                   <div class="row">
-                       <div class="col-sm-6 col-md-3 item">
-                           <h3>Productos</h3>
-                           <ul>
-                               <li><a href="./pages/singluten.html">Sin Gluten</a></li>
-                               <li><a href="./pages/sinazucar.html">Sin Azúcar</a></li>
-                           </ul>
-                       </div>
-                       <div class="col-sm-6 col-md-3 item">
-                           <h3>Nosotros</h3>
-                           <ul>
-                               <li><a href="./pages/nosotros.html">Conócenos</a></li>
-                               <li><a href="./pages/misesion.html">Crea tu sesión</a></li>
-                           </ul>
-                       </div>
-                       <div class="col-md-6 item text">
-                           <h3>Dulce Aloy</h3>
-                           <p>Pasteleria artesanal, con los mejores sabores de la zona. Para todo público, celiacos, diabéticos y para los que quieran disfrutar de un momento dulce.</p>
-                       </div>
-                   </div>
-                   <p class="titulo-footer">Dulce Aloy © 2021</p>
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-6 col-md-3 item">
+                     <h3>Productos</h3>
+                     <ul>
+                        <li><a href="./pages/singluten.html">Sin Gluten</a></li>
+                        <li><a href="./pages/sinazucar.html">Sin Azúcar</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-3 item">
+                     <h3>Nosotros</h3>
+                     <ul>
+                        <li><a href="./pages/nosotros.html">Conócenos</a></li>
+                        <li><a href="./pages/misesion.html">Crea tu sesión</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-6 item text">
+                     <h3>Dulce Aloy</h3>
+                     <p>Pasteleria artesanal, con los mejores sabores de la zona. Para todo público, celiacos, diabéticos y para los que quieran disfrutar de un momento dulce.</p>
+                  </div>
                </div>
+               <p class="titulo-footer">Dulce Aloy © 2021</p>
+            </div>
          </footer>
-     </div>
+      </div>
    </body>
 </html>

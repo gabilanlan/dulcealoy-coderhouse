@@ -1,128 +1,125 @@
 <!DOCTYPE HTML>
 <html lang="es">
-	<head>
-		<meta charset="utf-8">
-		<title>Dulce Aloy - Sesion Usuario</title>
-    <meta name="description" content="En Dulce Aloy encontrarás los pasteles más ricos de toda la zona. Qué esperas para conocernos? Entra ya!"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
- 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/css.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	</head>
-	<body>
+<head>
+  <meta charset="utf-8">
+  <title>Dulce Aloy - Sesion Usuario</title>
+  <meta name="description" content="En Dulce Aloy encontrarás los pasteles más ricos de toda la zona. Qué esperas para conocernos? Entra ya!"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark nav-bar-dulce">
-<div class="container">
-    <a  href="../index.html"><img src="../images/logo/Dulce-aloy-LOGO.png" class="tm-site-logo"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="main_nav">  
-    <ul class="navbar-nav ml-auto">
- <li class="nav-item ">
-                     <a class="nav-link" href="./nosotros.html">Nosotros <span class="sr-only">(current)</span></a>
-                  </li>
-                 
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Productos
-                     </a>
-                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./singluten.html">Sin Gluten</a>
-                        <a class="dropdown-item" href="./sinazucar.html">Sin Azúcar</a>
-                     </div>
-                  </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="./misesion.html">Mi Sesión</a>
-                  </li>
-    </ul>
-  </div> <!-- navbar-collapse.// -->
-</div> <!-- container.// -->
-</nav>
+  <header>
+   <nav class="nav-bar-dulce">
+    <div class="container">
+      <div >
+        <ul class="nav justify-content-center">
+          <li class="nav-item ">
+            <a class="nav-link" href="./nosotros.html">Nosotros <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./productos.html#singluten">Sin Gluten</a>
+          </li>
+          <a  href="../index.html"><img src="../images/Recurso 4.png" class="tm-site-logo"></a>
+          <li class="nav-item">
+            <a class="nav-link" href="./productos.html#sinazucar">Sin Azúcar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./misesion.html">Mi Sesión</a>
+          </li>
+        </ul>
+      </div>
 
-		<div class="container">
-		<form>        
-			<div class="form-group">
-	            <label for="nombre">Nombre  </label>
-	            <input type="text" name="nombre" class="form-control" />
-	        </div>
-	        <div class="form-group">
-	            <label for="email">Email </label>
-	            <input type="text" name="email" class="form-control" />
-	        </div>
-	        <div>
-	        	<label for="telefono">Teléfono</label>
-            	<input type="text" name="telefono" class="form-control" />
-            </div>
-            <div class="form-group">
-            	<label for="region">Región</label>
-            	<select name="region" class="form-control" >
-            		<option value="1">I Región</option>
-            		<option value="2">II Región</option>
-            		<option value="3">III Región</option>
-            		<option value="4">IV Región</option>
-            		<option value="13">Región Metropolitana</option>            		
-            	</select>
-
-            </div>
-            <div class="form-group">
-            	<label for="comuna">Comuna</label>
-            	<select name="comuna" class="form-control">
-            		<option value="01">Providencia</option>
-            		<option value="02">Macul</option>
-            		<option value="03">San Javier</option>
-            		<option value="04">Paine</option>
-            		<option value="05">Santiago</option>            		
-            	</select>
-            </div>
-            <div class="form-group">
-	            <label for="direccion">Dirección</label>
-	            <input type="text" name="direccion" class="form-control"/>
-	        </div>
-	        <div class="form-group">
-	            <label for="indicaciones">Indicaciones para envio</label>
-	            <textarea rows="5" name="indicaciones" placeholder="Dejar en Conserjería/ Tocar el timbre" class="form-control"></textarea>
-	        </div>
-	        <div class="form-group">
-	        	<div>
-	        		<input type="checkbox" name="susc" value="true" checked >¿Deseas suscribirte al newsletter de Dulce Aloy?
-	        	</div>
-	        </div>
-	        </br>
-	        	<button type="button" class="btn btn-secondary">Limpiar</button>
-	        	<button type="button" class="btn btn-success">Registrar Usuario</button>	         
-        </form>
     </div>
 
-	 <div class="footer">
-         <footer>
-               <div class="container">
-                   <div class="row">
-                       <div class="col-sm-6 col-md-3 item">
-                           <h3>Productos</h3>
-                           <ul>
-                               <li><a href="./pages/singluten.html">Sin Gluten</a></li>
-                               <li><a href="./pages/sinazucar.html">Sin Azúcar</a></li>
-                           </ul>
-                       </div>
-                       <div class="col-sm-6 col-md-3 item">
-                           <h3>Nosotros</h3>
-                           <ul>
-                               <li><a href="./pages/nosotros.html">Conócenos</a></li>
-                               <li><a href="./pages/misesion.html">Crea tu sesión</a></li>
-                           </ul>
-                       </div>
-                       <div class="col-md-6 item text">
-                           <h3>Dulce Aloy</h3>
-                           <p>Pasteleria artesanal, con los mejores sabores de la zona. Para todo público, celiacos, diabéticos y para los que quieran disfrutar de un momento dulce.</p>
-                       </div>
-                   </div>
-                   <p class="titulo-footer">Dulce Aloy © 2021</p>
-               </div>
-         </footer>
-     </div>
+  </nav>
+</header>
 
-	</body>
+<section class="container formulario">
+  <form>        
+    <div class="form-group">
+     <label for="nombre">Nombre  </label>
+     <input type="text" name="nombre" class="form-control" />
+   </div>
+   <div class="form-group">
+     <label for="email">Email </label>
+     <input type="text" name="email" class="form-control" />
+   </div>
+   <div>
+    <label for="telefono">Teléfono</label>
+    <input type="text" name="telefono" class="form-control" />
+  </div>
+  <div class="form-group">
+   <label for="region">Región</label>
+   <select name="region" class="form-control" >
+    <option value="1">I Región</option>
+    <option value="2">II Región</option>
+    <option value="3">III Región</option>
+    <option value="4">IV Región</option>
+    <option value="13">Región Metropolitana</option>            		
+  </select>
+
+</div>
+<div class="form-group">
+ <label for="comuna">Comuna</label>
+ <select name="comuna" class="form-control">
+  <option value="01">Providencia</option>
+  <option value="02">Macul</option>
+  <option value="03">San Javier</option>
+  <option value="04">Paine</option>
+  <option value="05">Santiago</option>            		
+</select>
+</div>
+<div class="form-group">
+ <label for="direccion">Dirección</label>
+ <input type="text" name="direccion" class="form-control"/>
+</div>
+<div class="form-group">
+ <label for="indicaciones">Indicaciones para envio</label>
+ <textarea rows="5" name="indicaciones" placeholder="Dejar en Conserjería/ Tocar el timbre" class="form-control"></textarea>
+</div>
+<div class="form-group">
+  <div>
+   <input type="checkbox" name="susc" value="true" checked >¿Deseas suscribirte al newsletter de Dulce Aloy?
+ </div>
+</div>
+</br>
+<button type="button" class="btn btn-secondary">Limpiar</button>
+<button type="button" class="btn btn-success">Registrar Usuario</button>	         
+</form>
+</section>
+
+<div class="footer">
+ <footer>
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-6 col-md-3 item">
+         <h3>Productos</h3>
+         <ul>
+           <li><a href="./pages/singluten.html">Sin Gluten</a></li>
+           <li><a href="./pages/sinazucar.html">Sin Azúcar</a></li>
+         </ul>
+       </div>
+       <div class="col-sm-6 col-md-3 item">
+         <h3>Nosotros</h3>
+         <ul>
+           <li><a href="./pages/nosotros.html">Conócenos</a></li>
+           <li><a href="./pages/misesion.html">Crea tu sesión</a></li>
+         </ul>
+       </div>
+       <div class="col-md-6 item text">
+         <h3>Dulce Aloy</h3>
+         <p>Pasteleria artesanal, con los mejores sabores de la zona. Para todo público, celiacos, diabéticos y para los que quieran disfrutar de un momento dulce.</p>
+       </div>
+     </div>
+     <p class="titulo-footer">Dulce Aloy © 2021</p>
+   </div>
+ </footer>
+
+
+</body>
 </html>
