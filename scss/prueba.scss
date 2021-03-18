@@ -1,13 +1,30 @@
 $colorBase: #ffe0e9;
 
-@import url('https://fonts.googleapis.com/css2?family=Lora');
+@font-face {
+font-family: "Cabin Sketch";
+src: url("../fonts/CabinSketch.woff2");
+}
 
-$font-main: 'Lora';
+@font-face {
+font-family: "Kaushan Script";
+src: url("../fonts/Kaushan.woff2");
+}
+
+@font-face {
+font-family: "Lora";
+src: url("../fonts/Lora.woff");
+}
+
+@font-face {
+font-family: "Dancing Script";
+src: url("../fonts/Dancing.woff");
+}
+
 
 h1 {
 
 	color: #290F4C;
-	font-family: $font-main;
+	font-family: 'Lora', serif;
     font-size: 48px;
 }
 
@@ -20,11 +37,13 @@ h1 {
 .nav-link{
 	padding-left: 30px;
     padding-right: 30px;
+    font-family: 'Lora', serif;
 }
 
 
 
 .btn-comprar{
+	font-family: 'Lora',serif;
 	display: inline-block;
     padding: 9px 60px 7px;
     line-height: 25px;
@@ -57,7 +76,8 @@ h1 {
 }
 
 .section-btn-comprar{
-	margin-top: 100px;
+	margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .productos-hp{
@@ -87,9 +107,8 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     text-align: left;
-    margin-top: 10%;
     font-size: 3em;
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Dancing Script', cursive;
 }
 
 .h2-catalogo{
@@ -112,35 +131,54 @@ h1 {
 
 .titulo-productos-hp{
 	margin-bottom: 50px;
-	padding-top: 20px;
+	padding-top: 24px;
+	
 }
 
-.tipo-producto-hp{
-	margin-top: 5px;
-}
-.precio-productos-hp{
-	margin-top: 14px;
-}
-.h1-titulo-productos-hp{
-	font-size:1vw;
-	display: block;
-	text-align: center;
-}
-
-.h1-subtitulo-productos-hp{
-	font-size:1vw;
-	display: block;
-	text-align: center;
-}
 
 .titulo-producto-hp{
 	margin-top: 30px;
 	display: block;
+	font-family: 'Lora', serif;
+	color: black;
+	font-size: 24px;
 } 
+
+
+.tipo-producto-hp{
+	margin-top: 5px;
+	font-family: 'Lora', serif;
+	color: black;
+	font-size: 16px;
+}
+.precio-productos-hp{
+	margin-top: 14px;
+	font-family: 'Lora', serif;
+	color: black;
+	font-size: 16px;
+}
+.h1-titulo-productos-hp{
+	font-size:42px;
+	color: #A4036F;
+	display: block;
+	text-align: center;
+	font-family: 'Kaushan Script';
+}
+
+.h1-subtitulo-productos-hp{
+	font-size:18px;
+	display: block;
+	text-align: center;
+	font-family: 'Lora';
+}
 
 .tipo-producto-hp{
 	display: block;
 
+}
+
+.p-footer{
+	font-size: 16px;
 }
 
 
@@ -149,6 +187,7 @@ h1 {
     align-content: center;
     display: flex;
     align-items: start;
+    font-family: 'Lora',serif;
     margin-bottom: 20px;
 }
 
@@ -188,6 +227,22 @@ h1 {
 	height: 80px;
 }
 
+.nombre-producto{
+	text-align: center;
+	font-family: 'Lora', serif;
+	color: black;
+	font-size: 18px;
+}
+
+.precio-producto{
+	text-align: center;
+	font-style: italic;
+	font-family: inherit;
+	font-size: 100%;
+	font-family: 'Lora', serif;
+	color: black;
+	font-size: 14px;
+}
 
 
 .tituloPrincipal {
@@ -206,41 +261,10 @@ h1 {
     height: 200px;
   }
 
-/*.lista-productos{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}*/
-
 .lista-productos{
 	padding-left: 40px;
 }
 
-.lista-productos-sinazucar{
-	padding-left: 40px;
-    padding-top: 30px;
-}
-
-.lista-productos-sinazucar__caja{
-	border-radius: 10%;
-	width: 300px / 480px * 30%   ;  
-	height: 300px / 480px * 30%   ;
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: $colorBase + #111141;
-	margin-top: 10px;
-	margin-right: 40px;
-	margin-bottom: 10px;
-	overflow: hidden;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	display: inline-block;
-}
-
-.lista-productos-sinazucar__descripcion-caja{
-	font-family: Arial, Helvetica, sans-serif;
-
-}
 .lista-productos__caja{
 	border-radius: 10%;
 	background-color: #ffe0e9;
@@ -254,10 +278,26 @@ h1 {
 	display: inline-block;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.lista-productos__caja_sa{
+	border-radius: 10%;
+	background-color: #e5e0ff;
+	width: 300px;
+	height: 300px;
+	margin-top: 10px;
+	margin-right: 40px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding-bottom: 5px;
+	display: inline-block;
+}
+
+.navbar-dark .navbar-nav {
     color: #ffffffbf;
 }
 
+.nav-link {
+	color: #6a0782;
+}
 
 p {
 	text-align: left;
@@ -314,7 +354,8 @@ ul ol {
 	font-size:1vw;
 	max-width: 600px;
     text-align: -webkit-right;
-    margin-top: 120px;
+    margin-top: 100px;
+    font-family: 'Lora';
 }
 
 .firma-qs{
